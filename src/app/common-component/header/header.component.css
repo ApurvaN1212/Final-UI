@@ -1,0 +1,67 @@
+header{
+    background-color:orange;
+    padding: 15px;
+    height: 35px;
+}
+.container{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.logo {
+    color:white;
+    font-size: 2rem;
+    font-weight: bold;
+    position: relative;
+  }
+
+.clearfix{clear: both;}
+.link{
+    color: white;
+    text-decoration: none;
+    font-family: monospace;
+    font-style: italic;
+    position: absolute;
+    left: -1px;
+    bottom: -11px;
+   
+}
+.serarbox input[type="text"]{
+    width: 86%;
+    padding: 5px;
+    outline: none;
+}
+.sbtn{
+    background: white;
+    height: 32px;
+    border: none;
+    vertical-align: middle;
+    margin-left: -1px;
+}
+.sbtn svg{
+    vertical-align: middle;
+}
+.cart-an{color: white; text-decoration: none; float: right; font-size: 18px; position: relative;}
+.cart-an span{padding-left: 5px; }
+.head-bottom{height: 110px; background-color: white; width: 100%; margin: 0 auto; padding-top: 10px;}
+.head-bottom-inside{width: 9%;float: left; margin-left: 14px; text-align: center; cursor: pointer;}
+.head-bottom-inside img{width: 85px;}
+.head-bottom-inside p{
+    margin: 0px;
+    margin-top: -13px;
+    font-size: 15px;
+}
+.container1{width: 1400px; margin: 0 auto;}
+.clearfix{clear: both;}
+.cart{
+    position: absolute;
+    font-size: 10px;
+    background: #dc3545!important;
+    border-radius: 10px;
+    vertical-align: revert;
+    width: 10px;
+    padding: 1px;
+    top: -9px;
+    left: -11px;
+    
+}

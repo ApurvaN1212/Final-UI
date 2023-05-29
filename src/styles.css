@@ -1,0 +1,17 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    
+    background-color: hsl(0, 0%, 90%);
+}
+*{font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif}
+.container{
+    width: 1200px;
+    margin: 0 auto;
+}
+h4{font-size: 14px; font-weight: normal; white-space: nowrap;
+   
+    overflow: hidden;
+    text-overflow: ellipsis;}
+.col-sm-3{width: 25%; float: left; position: relative;}
+.col-sm-6{width: 50%; float: left;}

@@ -1,0 +1,36 @@
+<div class="head-bottom">
+    <div class="container1">
+        
+    <div class="head-bottom-inside" (click)="filteritem('')">
+        <img src="../../../assets/images/fr.webp"/>
+        <p>Grocery</p>
+    </div>
+    
+    <div class="head-bottom-inside"><img src="../../../assets/images/fashion.webp" style="padding-bottom: 7px;
+        margin-top: -7px;" (click)="filteritem('fashion')"/><p>Fashions</p></div>
+    <div class="head-bottom-inside"(click)="filteritem('electronics')"><img src="../../../assets/images/ele.webp"/><p>Electronics</p></div>
+    
+    <div class="head-bottom-inside" (click)="filteritem('jewelery')">
+        <img src="../../../assets/images/jewellery1.jpg"/>
+        <p>Jewellery</p>
+    </div>
+    
+    <div class="clearfix"></div>
+    
+</div>
+
+</div>
+
+<div class="container">
+    <br/><br/>
+    <div class="col-sm-3" *ngFor="let item of filterCategory | filter : searchtext" >
+        <div class="box" >
+            <img src={{item.image}}/>
+            <h4>{{item.title}}</h4>
+            <!--<p>{{item.description}}</p>-->
+            <p class="price">Price:-<strong>Rs{{item.price}}</strong></p>
+            <button (click)=addtocart(item)>ADD TO CART</button>
+        </div>
+    </div>
+
+</div>

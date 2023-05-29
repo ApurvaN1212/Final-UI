@@ -1,0 +1,47 @@
+
+<br/><br/>
+<div class="container" *ngIf="products.length !=0">
+    <table>
+        <tr>
+            <th>Sr.No</th>
+            <th>Product Name</th>
+            <th>Product Image</th>
+            <th>Description</th>
+            <th style="width: 100px;">Price</th>
+            <th style="width: 100px;">Quantity</th>
+            <th style="width: 100px;">Total</th>
+            <th style="width: 150px;">Action</th>
+        </tr>
+        <tr *ngFor="let data of products; let i = index">
+            <td>{{i}}</td>
+            <td>{{data.title}}</td>
+            <td><img src={{data.image}} style="width: 100px; height: 100px;"></td>
+            <td>{{data.description}}</td>
+            <td>{{data.price}}</td>
+            <td>1</td>
+            <td>{{data.price}}</td>
+            <td><img src="../../../assets/images/delete.png" style="width: 50px;" (click)="removeItem(data)"></td>
+            
+        </tr>
+        <tr>
+            <td colspan="4"></td>
+            <td><button  class="cmbtn" (click)="emptycart()">Empty Cart</button></td>
+            <td><button routerLink="/products" class="cmbtn" style="background-color: #4b71e0;">Shop More</button></td>
+            <td><button class="cmbtn" style="background-color: #fb641b;">Checkout</button></td>
+            
+        </tr>
+    </table>
+</div>
+
+<ng-container *ngIf="products.length ==0">
+    <br/><br/>
+    <div class="container cardmain">
+        
+        <div class="center">
+            <img src="../../../assets/images/empty.webp" alt="">
+            <h4>Your cart is empty!</h4>
+            <h6>Add item to it now</h6>
+            <button routerLink="/products" class="shopnow">Shop Now</button>
+        </div>
+    </div>
+</ng-container>

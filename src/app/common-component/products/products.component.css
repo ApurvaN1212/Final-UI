@@ -1,0 +1,39 @@
+.box{
+    background-color: white;
+    width: 250px;
+    float: left;
+    margin: 5px;
+    padding: 20px;
+    height: 470px;
+    margin-bottom: 30px;
+    
+}
+.box img{width: 100%;  height: 250px; padding: 10px; box-sizing: border-box;}
+p{
+    font-size: 12px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.price{font-size: 16px;}
+button{
+    width: 100%;
+    padding: 10px;
+    background: orange;
+    color: white;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+.cart-an{color: white; text-decoration: none; float: right; font-size: 18px;}
+.cart-an span{padding-left: 5px; }
+.head-bottom{height: 110px; background-color: white; width: 100%; margin: 0 auto; padding-top: 10px;}
+.head-bottom-inside{width: 9%;float: left; margin-left: 14px; text-align: center; cursor: pointer;}
+.head-bottom-inside img{width: 85px;}
+.head-bottom-inside p{
+    margin: 0px;
+    margin-top: -13px;
+    font-size: 15px;
+}
+.container1{  margin: 0 auto;}
+.clearfix{clear: both;}
